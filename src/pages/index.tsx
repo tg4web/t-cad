@@ -3,7 +3,7 @@ import { signIn, signOut } from "next-auth/react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import NavMenu from "../components/NavMenu";
-import { useUserSession, useHead, useLogin } from "../utils/useHooks";
+import { useUserSession, useHead } from "../utils/useHooks";
 
 const Home: NextPage = () => {
   useHead("T-CAD | Home Page");
@@ -13,8 +13,6 @@ const Home: NextPage = () => {
 
   const router = useRouter();
   const user = useUserSession()?.user;
-
-  const login = useLogin();
 
   if (!user)
     return (
@@ -47,7 +45,6 @@ const Home: NextPage = () => {
           <div className="">
             <label
               id="login-btn"
-              onClick={login}
               className=" fixed right-1 top-3 flex cursor-pointer p-1 text-xs font-bold"
             >
               Login
