@@ -19,24 +19,39 @@ const Home: NextPage = () => {
   if (!user)
     return (
       <>
-      <div id="login-popup" className=" hidden justify-center items-center w-full h-screen bg-black bg-opacity-60">
-        <div className=" flex w-full items-center justify-center flex-col bg-white h-64 p-6">
-          <h1 className="text-2xl font-bold p-1">Login Options</h1>
-          <button className="flex items-center text-xl" type="button" onClick={() => signIn('discord')}><Image className="p-1" src={discordLogo} width={32} height={32} />Discord</button>
+        <div
+          id="login-popup"
+          className=" hidden h-screen w-full items-center justify-center bg-black bg-opacity-60"
+        >
+          <div className=" flex h-64 w-full flex-col items-center justify-center bg-white p-6">
+            <h1 className="p-1 text-2xl font-bold">Login Options</h1>
+            <button
+              className="flex items-center text-xl"
+              type="button"
+              onClick={() => signIn("discord")}
+            >
+              <Image
+                alt="discord logo"
+                className="p-1"
+                src={discordLogo}
+                width={32}
+                height={32}
+              />
+              Discord
+            </button>
+          </div>
         </div>
-      </div>
         <div className="flex w-full items-center justify-center p-2">
           <Image alt="logo" src={logo} width={32} height={54} />
           <NavMenu />
           <div className="">
-            <label id="login-btn" onClick={login} className=" fixed right-1 top-3 flex p-1 cursor-pointer text-xs font-bold">
+            <label
+              id="login-btn"
+              onClick={login}
+              className=" fixed right-1 top-3 flex cursor-pointer p-1 text-xs font-bold"
+            >
               Login
-              <Image
-                alt="logo"
-                src={userProfileIcon}
-                width={16}
-                height={54}
-              />
+              <Image alt="logo" src={userProfileIcon} width={16} height={54} />
             </label>
           </div>
         </div>
