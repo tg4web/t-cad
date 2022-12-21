@@ -1,28 +1,36 @@
-# Create T3 App
+# T-CAD
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+**<span style="color:red">⚠️WARNING⚠️</span> This project is currently under-development and has not yet been released. Use at your own risk!**
 
-## What's next? How do I make an app with this?
+## What is T-CAD?
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+T-CAD is a computer-aided dispatch or mobile data terminal system for FiveM roleplay communities, and the official CAD/MDT of Lockhart RP. Optionally, T-CAD can integrate with your server to provide real-time data to your members.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
 
-## Learn More
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## How to deploy?
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+Deploying T-CAD on your own server is easy! Just follow these steps:
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+1. Open up a terminal and navigate to your documents folder. 
 
-## How do I deploy this?
+    * Example: ````C:/Users/Username/Documents/ ````
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+2. Use ```` git clone ```` to clone the repo into your documents folder.
+
+3. Navigate into the ````t-cad```` folder.
+4. Use ````npm run build```` to compile the application locally.
+5. After the application is successfully compiled, run ````npm run start``` to start the server.
+6. Nagivate to ````http://localhost:3000```` in your browser to access the application.
+
+## Want to contribute?
+
+To learn more about contribution opportunities, please join the discord and inquire.
+
+- [Discord](https://create.t3.gg/)
+
+## More about the project
+- [Documentation](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+
+
