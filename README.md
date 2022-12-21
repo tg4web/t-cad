@@ -21,7 +21,7 @@ Deploying T-CAD on your own server is easy! Just follow these steps:
 
 3. Navigate into the ````t-cad```` folder.
 4. Use ````npm run build```` to compile the application locally.
-5. After the application is successfully compiled, run ````npm run start``` to start the server.
+5. After the application is successfully compiled, run ````npm run start```` to start the server.
 6. Nagivate to ````http://localhost:3000```` in your browser to access the application.
 
 ## Want to contribute?
