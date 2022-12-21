@@ -51,10 +51,8 @@ const Home: any = () => {
 
   // Global variables & constants
 
-  const logo = "/logo.svg";
   const discordLogo = "/discord-v2.svg";
-  const userProfileIcon = "/user-profile-icon.svg";
-
+  
   const router = useRouter();
   const user = useUserSession()?.user;
 
@@ -86,14 +84,9 @@ const Home: any = () => {
           </div>
         </div>
         <div className="flex w-full items-center justify-center p-2">
-          <Image alt="logo" src={logo} width={32} height={54} />
+          
           <NavMenu />
-          <div id="login-btn" className="">
-            <label className=" fixed right-1 top-3 flex cursor-pointer p-1 text-xs font-bold">
-              Login
-              <Image alt="logo" src={userProfileIcon} width={16} height={54} />
-            </label>
-          </div>
+          
         </div>
       </>
     );
