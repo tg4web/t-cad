@@ -28,9 +28,9 @@ Deploying T-CAD on your own server is easy! Just follow these steps:
 
 To learn more about contribution opportunities, please join the discord and inquire.
 
-- [Discord](https://create.t3.gg/)
+- [Discord](Coming soon!)
 
 ## More about the project
-- [Documentation](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- [Documentation](#) — Coming soon!
 
 
