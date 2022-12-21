@@ -48,7 +48,6 @@ export const useUserSession = () => {
 };
 
 export const useLogin = () => {
-
   useEffect(() => {
     const loginBtn = document.querySelector("#login-btn");
     const loginPopup = document.querySelector("#loginPopup");
@@ -57,4 +56,4 @@ export const useLogin = () => {
       loginPopup?.classList.remove("hidden");
     });
   });
-};  
+};

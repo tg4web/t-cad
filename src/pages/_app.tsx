@@ -15,8 +15,8 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <ContainerWrapper >
-      <Component {...pageProps} as />
+      <ContainerWrapper>
+        <Component {...pageProps} as />
       </ContainerWrapper>
       <ToastContainer />
     </SessionProvider>

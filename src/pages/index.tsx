@@ -29,9 +29,6 @@ DO NOT CHANGE THIS FILE UNELSS YOU KNOW WHAT YOU ARE DOING!
 
 */
 
-
-
-
 // Imports
 
 import { signIn } from "next-auth/react";
@@ -52,7 +49,7 @@ const Home: any = () => {
   // Global variables & constants
 
   const discordLogo = "/discord-v2.svg";
-  
+
   const router = useRouter();
   const user = useUserSession()?.user;
 
@@ -84,10 +81,7 @@ const Home: any = () => {
           </div>
         </div>
 
-          
-          <NavMenu />
-          
-
+        <NavMenu />
       </>
     );
 
