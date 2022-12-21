@@ -6,7 +6,7 @@ const NavMenu = () => {
   const userProfileIcon = "/user-profile-icon.svg";
 
   return (
-    <nav className="flex w-full items-center justify-between">
+    <nav className="flex w-full items-center justify-between p-2">
       <Image alt="logo" src={logo} width={32} height={32} />
       <ul className="flex w-56 justify-between">
         <li>
