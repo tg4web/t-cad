@@ -1,6 +1,6 @@
 import { trpc } from "./trpc";
 import { toast } from "react-toastify";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // Alert hook
 export const useAlert = () => {
@@ -49,22 +49,12 @@ export const useUserSession = () => {
 
 export const useLogin = () => {
 
-  const [loginPopupState, setLoginPopupState] = useState(false);
-
   useEffect(() => {
-    const loginBtn = document.getElementById("login-btn");
-    const loginPopup = document.getElementById("login-popup");
-    loginBtn?.addEventListener("click", () => {
-      setLoginPopupState(true);
-    });
-    if (loginPopupState === true) {
-      loginPopup?.style.display === "flex";
-      return;
-    }
+    const loginBtn = document.querySelector("#login-btn");
+    const loginPopup = document.querySelector("#loginPopup");
 
-    if (loginPopupState === false) {
-      loginPopup?.style.display === "none";
-      return;
-    }
-  }, [loginPopupState, setLoginPopupState]);
+    loginBtn?.addEventListener("click", () => {
+      loginPopup?.classList.remove("hidden");
+    });
+  });
 };  
