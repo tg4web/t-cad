@@ -19,6 +19,6 @@ jobs:
       - run: npm ci
       - run: npm run git-build
 =======
-      - run: npx run eslint
+      - run: npx eslint
 >>>>>>> 39c5043 (ci/cd)
       - run: npx tsc
