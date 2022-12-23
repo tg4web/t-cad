@@ -15,10 +15,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-<<<<<<< HEAD
       - run: npm ci
-      - run: npm run git-build
-=======
-      - run: npx eslint
->>>>>>> 39c5043 (ci/cd)
+      - run: npx eslint .
       - run: npx tsc
