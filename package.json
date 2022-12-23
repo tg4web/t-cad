@@ -11,7 +11,7 @@
     "lint": "next lint",
     "pretty": "prettier --check .",
     "start": "next start",
-    "test": "next lint . && prettier --check . && next build . && next start .",
+    "git-build": "next lint . && prettier --check . && next build . && next start .",
     "prepare": "husky install"
   },
   "dependencies": {
