@@ -8,7 +8,7 @@ T-CAD is a computer-aided dispatch or mobile data terminal system for FiveM role
 
 ## Requirements to deploy
 
-1. Node.js 16 or greater
+1. Node.js 18 or greater
 
 ## How to deploy?
 
