@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useHead } from "../../utils/useHooks";
-import NavMenu from "../../components/NavMenu";
+import NavMenu from "../../components/common/NavMenu";
 
 const About: NextPage = () => {
   useHead("T-CAD | About Page");

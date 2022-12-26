@@ -1,11 +1,5 @@
 import { trpc } from "./trpc";
-import { toast } from "react-toastify";
 import { useEffect } from "react";
-
-// Alert hook
-export const useAlert = () => {
-  return toast("Hello World");
-};
 
 // Set the page title dynamically
 export const useHead = (title: string) => {
@@ -45,15 +39,4 @@ export const useUserSession = () => {
     return sessionUser;
   }
   return null;
-};
-
-export const useLogin = () => {
-  useEffect(() => {
-    const loginBtn = document.querySelector("#login-btn");
-    const loginPopup = document.querySelector("#loginPopup");
-
-    loginBtn?.addEventListener("click", () => {
-      loginPopup?.classList.remove("hidden");
-    });
-  });
 };

@@ -31,11 +31,13 @@ DO NOT CHANGE THIS FILE UNELSS YOU KNOW WHAT YOU ARE DOING!
 
 // Imports
 
-import { signIn } from "next-auth/react";
-import { useRouter } from "next/router";
-import Image from "next/image";
-import NavMenu from "../components/NavMenu";
-import { useUserSession, useHead, useLogin } from "../utils/useHooks";
+import NavMenu from "../components/common/NavMenu";
+
+import { useHead } from "../utils/useHooks";
+import { getServerSideProps } from "../utils/sessionCheck";
+
+// Export the getServerSideProps function
+export { getServerSideProps };
 
 // Initialize the component
 
@@ -44,50 +46,13 @@ const Home: any = () => {
   // Custom Hooks on the top
 
   useHead("T-CAD | Home Page");
-  useLogin();
-
   // Global variables & constants
-
-  const discordLogo = "/discord-v2.svg";
-
-  const router = useRouter();
-  const user = useUserSession()?.user;
 
   // Check if user is logged in else show home page
 
-  if (!user)
-    return (
-      <>
-        <div
-          id="loginPopup"
-          className="hidden h-screen w-full items-center justify-center bg-black bg-opacity-60"
-        >
-          <div className=" flex h-64 w-full flex-col items-center justify-center bg-white p-6">
-            <h1 className="p-1 text-2xl font-bold">Login Options</h1>
-            <button
-              className="flex items-center text-xl"
-              type="button"
-              onClick={() => signIn("discord")}
-            >
-              <Image
-                alt="discord logo"
-                className="p-1"
-                src={discordLogo}
-                width={32}
-                height={32}
-              />
-              Discord
-            </button>
-          </div>
-        </div>
-
-        <NavMenu />
-      </>
-    );
+  return <NavMenu />;
 
   // If logged in redirect to profile page
-
-  return router.push(`/profile/${user.id}`);
 };
 
 // Don't forget to export the component!
