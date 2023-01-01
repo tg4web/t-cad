@@ -25,7 +25,7 @@ export const useHead = (title: string) => {
 // Get the current user session data from the database (Only use the useUserSession hook on client side)
 
 export const useGetDbSession = () => {
-  const { data: sessionData } = trpc.auth.getSession.useQuery();
+  const { data: sessionData } = trpc.auth.getDbUser.useQuery();
 
   if (sessionData !== undefined) {
     return sessionData;
@@ -36,7 +36,8 @@ export const useGetDbSession = () => {
 export const useUserSession = () => {
   const sessionUser = useGetDbSession();
   if (sessionUser !== null) {
-    return sessionUser;
+    const { id, email, name, role, image, isAdmin } = sessionUser;
+    return { id, email, name, role, image, isAdmin };
   }
   return null;
 };

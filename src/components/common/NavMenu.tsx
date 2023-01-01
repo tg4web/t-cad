@@ -11,7 +11,7 @@ const NavMenu = () => {
   const userProfileIcon = "/user-profile-icon.svg";
   const discordLogo = "/discord-v2.svg";
 
-  const user = useUserSession()?.user;
+  const user = useUserSession();
 
   useEffect(() => {
     if (user) {

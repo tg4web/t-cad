@@ -1,7 +1,9 @@
 import { toast } from "react-toastify";
 
-const alert = (message: string) => {
-  return toast(message);
+const useAlert = (message: string) => {
+  return toast(message, {
+    toastId: message,
+  });
 };
 
-export default alert;
+export default useAlert;

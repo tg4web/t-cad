@@ -6,7 +6,7 @@ import { getServerSideProps } from "../../utils/sessionCheck";
 export { getServerSideProps };
 
 const UserProfile = () => {
-  const user = useUserSession()?.user;
+  const user = useUserSession();
   const userProfileIcon = user?.image || "/user-profile-icon.svg";
 
   useHead(user?.name + `'s Profile` || "User Profile");
